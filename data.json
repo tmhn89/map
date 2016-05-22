@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Da Nang",
+    "lat": 16.03,
+    "lng": 108.18,
+    "spi": -0.26,
+    "range": 3
+  },
+  {
+    "name": "Trao",
+    "lat": 15.92805556,
+    "lng": 107.6413889,
+    "spi": -0.28,
+    "range": 1
+  },
+  {
+    "name": "Nong Son",
+    "lat": 15.7025,
+    "lng": 108.0341667,
+    "spi": 2.77,
+    "range": 3
+  },
+  {
+    "name": "Thanh My",
+    "lat": 15.76666667,
+    "lng": 107.8305556,
+    "spi": -2.39,
+    "range": 7
+  },
+  {
+    "name": "Hoi Khach",
+    "lat": 15.82,
+    "lng": 107.9097222,
+    "spi": -1.41,
+    "range": 1
+  },
+  {
+    "name": "Ai Nghia",
+    "lat": 15.88138889,
+    "lng": 108.1102778,
+    "spi": -0.35,
+    "range": 1
+  },
+  {
+    "name": "Giao Thuy",
+    "lat": 15.84166667,
+    "lng": 108.1344444,
+    "spi": -2.21,
+    "range": 3
+  },
+  {
+    "name": "Hoi An",
+    "lat": 15.87666667,
+    "lng": 108.3352778,
+    "spi": -0.62,
+    "range": 5
+  },
+  {
+    "name": "Cau Lau",
+    "lat": 15.85805556,
+    "lng": 108.2733333,
+    "spi": -1.42,
+    "range": 1
+  },
+  {
+    "name": "Cam Le",
+    "lat": 16.01083333,
+    "lng": 108.2058333,
+    "spi": 2.66,
+    "range": 1
+  },
+  {
+    "name": "Vinh Dien",
+    "lat": 15.89166667,
+    "lng": 108.25,
+    "spi": -0.31,
+    "range": 1
+  },
+  {
+    "name": "Kham Duc",
+    "lat": 15.445,
+    "lng": 107.7936111,
+    "spi": -2.43,
+    "range": 2
+  },
+  {
+    "name": "Que Son",
+    "lat": 15.7,
+    "lng": 108.1,
+    "spi": 1.22,
+    "range": 2
+  },
+  {
+    "name": "Tien Phuoc",
+    "lat": 15.48833333,
+    "lng": 108.3077778,
+    "spi": -2.62,
+    "range": 4
+  },
+  {
+    "name": "Thang Binh",
+    "lat": 15.73833333,
+    "lng": 108.3505556,
+    "spi": -0.17,
+    "range": 1
+  },
+  {
+    "name": "Tien Sa",
+    "lat": 16.1,
+    "lng": 108.2166667,
+    "spi": -1.15,
+    "range": 3
+  },
+  {
+    "name": "Son Phuoc",
+    "lat": 16.01666667,
+    "lng": 108.05,
+    "spi": -0.5,
+    "range": 1
+  },
+  {
+    "name": "Ba Na",
+    "lat": 16.01666667,
+    "lng": 108,
+    "spi": -0.02,
+    "range": 1
+  }
+]
