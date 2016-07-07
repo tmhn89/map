@@ -43,14 +43,18 @@ function initMap() {
                     }
 
                     // var opacity = (rain * 20 < 1) ? rain * 20 : 1;
-
-                    var opacity = (rain > 1) ? 1 : rain;
+                    var opacity = 0.1;
+                    var fillColor = '#e74c3c';
+                    if (rain > 0) {
+                        opacity = (rain > 1) ? 1 : rain;
+                        fillColor = '#4c94dc';
+                    }
 
                     rectangle = new google.maps.Rectangle({
                         strokeColor: '#FF0000',
                         strokeOpacity: 0,
                         strokeWeight: 1,
-                        fillColor: '#4c94dc',
+                        fillColor: fillColor,
                         fillOpacity: opacity,
                         map: map,
                         bounds: {
