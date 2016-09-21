@@ -6,49 +6,54 @@ $(function() {
 });
 function initMap() {
     // read csv
-    Papa.parse('gsmap_nrt.20160704.2200.02_AsiaSE.csv', {
+    Papa.parse('gsmap_nrt.20160921.1700.02_AsiaSE.csv', {
         download: true,
     	complete: function(results) {
             // create grid from data
             map = new google.maps.Map(document.getElementById('map'), {
-                // center: {lat: 15.776, lng: 108.335},
-                center: {lat: 20.55, lng: 105.55},
+                center: {lat: 15.776, lng: 108.335},
+                // center: {lat: 20.55, lng: 105.55},
                 zoom: 9
             });
             infoWindow = new google.maps.InfoWindow();
 
-            // center of Vietnam
-            // area cover: 13~16.3 lat; 107.2~109.4 lng
-            // var i = 68940;
-            // while (i < 78171) {
+            // VGTB
+            // area cover: 15.00~16.20, 107.25~108.80
 
-
-            // test: Hanoi
-            // area cover: 20.75~21.1 lat; 105.5~106.1 lng
-
-            var i = 62489;
-            while (i < 64901) {
+            var i = 69339;
+            while (i < 75602) {
             // while (i < 70000) {
                 var lat = parseFloat(results.data[i][0]);
                 // if (lat > 13) {
-                if (lat > 20) {
+                if (lat > 15) {
                     // process
                     var lng = parseFloat(results.data[i][1]);
                     var rain = parseFloat(results.data[i][2]);
 
-                    if (rain == 0) {
-                        if (Math.random() > 0.8) {
-                            rain = Math.random();
-                        }
+                    // todo: remove in production. just for testing since current rainfall is 0 in the whole area
+                    var opacity = 0.5;
+                    var fillColor = 'transparent';
+
+                    // if (rain == 0) {
+                    //     rain = parseFloat(Math.random()).toFixed(2);
+                    //
+                    //
+                    // } else {
+                    //     fillColor = '#3498db';
+                    // }
+                    if (rain < 0.05) {
+                        // opacity = (rain > 1) ? 1 : rain;
+                        // fillColor = '#4c94dc';
+                        fillColor = '#c0392b';
+                    } else if (rain < 0.1) {
+                        fillColor = '#e74c3c';
+                    } else if (rain < 0.2) {
+                        fillColor = '#e67e22';
+                    } else if (rain < 0.3) {
+                        fillColor = '#f39c12';
                     }
 
-                    // var opacity = (rain * 20 < 1) ? rain * 20 : 1;
-                    var opacity = 0.1;
-                    var fillColor = '#e74c3c';
-                    if (rain > 0) {
-                        opacity = (rain > 1) ? 1 : rain;
-                        fillColor = '#4c94dc';
-                    }
+                    // end testing
 
                     rectangle = new google.maps.Rectangle({
                         strokeColor: '#FF0000',
